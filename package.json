@@ -11,5 +11,11 @@
     "url": "coinstats_ssr_styledComponents"
   },
   "author": "Ghevond97 tigranuhiphoghosyan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1"
+  }
 }
