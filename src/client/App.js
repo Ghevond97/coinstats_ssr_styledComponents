@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import TableOfStats from "./containers/TableOfStats";
 
 // Our single Styled Component definition
 const AppContainer = styled.div`
@@ -13,6 +14,6 @@ const AppContainer = styled.div`
   background: linear-gradient(20deg, rgb(219, 112, 147), #daa357);
 `;
 
-const App = () => <AppContainer>💅</AppContainer>;
+const App = () => <AppContainer><TableOfStats/></AppContainer>;
 
 export default App;

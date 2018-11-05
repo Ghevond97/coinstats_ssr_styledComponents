@@ -1,5 +1,13 @@
 import React from 'react';
-import { render } from 'react-dom';
-import App from './App';
+import { hydrate } from 'react-dom/server';
+import { Provider } from 'react-redux';
 
-render(<App />, document.getElementById('root'));
+import App from './App';
+import store from './store/configStore';
+
+hydrate(
+  <Provider>
+    <App store={store}/>
+  </Provider>,
+  document.getElementById('root')
+);
