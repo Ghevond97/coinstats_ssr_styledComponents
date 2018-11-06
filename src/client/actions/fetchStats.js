@@ -1,5 +1,9 @@
-import fetch from 'isomorphic-fetch';
+import CoinMarketCap from 'coinmarketcap-api';
+
 import { REQUEST_STATS, RECEIVE_STATS, ERROR_STATS } from '../constants';
+
+const apiKey = 'b120973f-2787-4115-9e4f-504eebccdf6a';
+const client = new CoinMarketCap(apiKey);
 
 const requestStats = () => {
   return {
@@ -21,10 +25,8 @@ const errorMessage = error => {
 export const getStats = () => {
   return dispatch => {
     dispatch(requestStats());
-    return fetch(
-      `https://api.coinmarketcap.com/v2/ticker/?start=101&limit=10&sort=id&structure=array`
-    )
-      .then(response => response.json())
+    return client
+      .getTickers({ limit: 3000 })
       .then(json => dispatch(receivedStats(json.data)))
       .catch(error => dispatch(errorMessage(error)));
   };

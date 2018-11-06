@@ -10,7 +10,6 @@ export const AppContainer = styled.div`
   color: white;
 `;
 
-
 const columns = [
   { title: 'title1', dataIndex: 'a', key: 'a', width: 100 },
   { id: '123', title: 'title2', dataIndex: 'b', key: 'b', width: 100 },
@@ -57,7 +56,6 @@ class TableOfStats extends Component {
   
   render() {
     const { stats } = this.props;
-
     return (
       <AppContainer>
         <Table columns={columns} data={data} components={components} />
