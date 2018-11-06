@@ -26,6 +26,6 @@ export const getStats = () => {
     )
       .then(response => response.json())
       .then(json => dispatch(receivedStats(json.data)))
-      .catch(error => dispatch(errorMessage()));
+      .catch(error => dispatch(errorMessage(error)));
   };
 };

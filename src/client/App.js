@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import TableOfStats from "./containers/TableOfStats";
 
-// Our single Styled Component definition
 const AppContainer = styled.div`
   display: flex;
   align-items: center;

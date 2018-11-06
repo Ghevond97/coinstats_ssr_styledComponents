@@ -26,15 +26,20 @@
     "webpack-node-externals": "^1.2.0"
   },
   "dependencies": {
+    "css-loader": "1.0.1",
     "express": "^4.16.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "install": "^0.12.2",
     "isomorphic-fetch": "^2.2.1",
     "prettier": "^1.14.3",
+    "rc-table": "6.4.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^5.1.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "serialize-javascript": "^1.5.0",
+    "style-loader": "0.23.1",
     "styled-components": "^4.0.3",
     "uri-js": "^4.2.2"
   }
