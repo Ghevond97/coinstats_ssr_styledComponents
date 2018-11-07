@@ -8,10 +8,15 @@ const AppContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+  margin-top:10%;
   font-size: 40px;
   background: linear-gradient(20deg, rgb(219, 112, 147), #daa357);
+  overflow: scroll;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:10%;
 `;
 
 const App = () => <AppContainer><TableOfStats/></AppContainer>;
